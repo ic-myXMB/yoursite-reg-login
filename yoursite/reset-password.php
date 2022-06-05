@@ -81,6 +81,12 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
 </style>
 <body>
   <div class="wrapper">
+    <div class="float-end">
+      <?php 
+        // Include top menu
+        include("inc/top_menu.php"); 
+      ?>
+    </div>     
     <h2><i class="fa-solid fa-file-pen"></i> Password Reset Form</h2>
     <p>Users can fill out this form to reset their passwords.</p>
     <form action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>" method="post">
