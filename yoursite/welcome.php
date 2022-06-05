@@ -19,7 +19,13 @@ if(!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true){
     .wrapper{ width: 98%; margin: auto auto; padding: 20px; }
 </style> 
 <body>
-  <div class="wrapper">  
+  <div class="wrapper"> 
+    <div class="float-end">
+      <?php 
+        // Include top menu
+        include("inc/top_menu.php"); 
+      ?>
+    </div> 
     <h2><i class="fa-solid fa-user-check"></i> User</h2>
     <p>Member Introduction </p>    
     <div class="card">
@@ -30,7 +36,9 @@ if(!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true){
             </div>
             <div class="text-center">
             <a class="btn btn-warning m-1" href="reset-password.php" role="button">Reset Your Password <i class="fa-solid fa-rotate-right"></i></a>
+            <!--
             <a class="btn btn-danger m-1" href="logout.php" role="button">Sign Out Of Your Account <i class="fa-solid fa-arrow-right-from-bracket"></i></a>
+            -->
             </div>
         </div>
     </div>
