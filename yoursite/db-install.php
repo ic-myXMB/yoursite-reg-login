@@ -5,7 +5,7 @@ function table_not_installed()
 {
 
    // Table installing message
-   $_SESSION['message4'] = '<div style="background-color:#46A7F5;color:#FFFFFF;opacity:0.83;transition:opacity 0.6s;margin-bottom:15px;padding:20px;border-radius:3px;">Table is not installed! So, installing.</div> ';
+   $_SESSION['message4'] = '<div class="alert alert-primary" role="alert">Table is not installed! So, installing.</div> ';
 
    if (isset($_SESSION['message4'])) {
    
@@ -23,7 +23,7 @@ function table_installed()
 {
 
    // Table not installing message
-   $_SESSION['message3'] = '<div style="background-color:#FFA92A;color:#FFFFFF;opacity:0.83;transition:opacity 0.6s;margin-bottom:15px;padding:20px;border-radius:3px;">Table was already installed! So, not installing.</div> ';
+   $_SESSION['message3'] = '<div class="alert alert-warning" role="alert">Table was already installed! So, not installing.</div> ';
 
    if (isset($_SESSION['message3'])) {
    
@@ -41,7 +41,7 @@ function dbs_not_installed()
 {
 
    // Database not installing message
-   $_SESSION['message2'] = '<div style="background-color:#F56257;color:#FFFFFF;opacity:0.83;transition:opacity 0.6s;margin-bottom:15px;padding:20px;border-radius:3px;">Database was already installed! You can begin by creating an account. <a href="register.php" style="color:#FFFFFF;">Sign up now</a></div> ';
+   $_SESSION['message2'] = '<div class="alert alert-danger" role="alert">Database was already installed! You can begin by creating an account. <a href="register.php" class="alert-link">Sign up now</a></div> ';
 
    if (isset($_SESSION['message2'])) {
    
@@ -59,7 +59,7 @@ function dbs_installed()
 {
 
    // Database is installed message
-   $_SESSION['message1'] = '<div style="background-color:#04AA6D;color:#FFFFFF;opacity:0.83;transition:opacity 0.6s;margin-bottom:15px;padding:20px;border-radius:3px;">Database is installed! You can begin by creating an account. <a href="register.php" style="color:#FFFFFF;">Sign up now</a></div> ';
+   $_SESSION['message1'] = '<div class="alert alert-success" role="alert">Database is installed! You can begin by creating an account. <a href="register.php" class="alert-link">Sign up now</a></div> ';
 
    if (isset($_SESSION['message1'])) {
    
