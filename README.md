@@ -1,1 +1,45 @@
 # yoursite-reg-login
+
+YourSite: Basic PHP / MySQL Bootstrap 5 User Login, User Registration, User Welcome & User Reset Password forms with light dark mode swith 
+
+Notice: This project is submitted and shared "AS IS" in the hopes that folks may find it of some use and hopefully see it as a starting point to continue on with further and improve upon.
+
+This project uses:
+
+* Bootstrap 5.2 beta
+
+* Light Switch 0.1.4
+
+* Font Awesome 6.1.1
+
+Note: this does not include an index file or anything other than the login, registration, reset password forms and welcome page and included bootstrap 5.2 beta 1 and font awesome 6.1.1 files...
+
+note: I did not opt to add a control panel or owner account and user management dashboard in this basic example as this is meant only to be a basic functional starting point for anyone wanting such to then edit / expand upon further. That is all. Best of luck!
+
+
+Setup:
+
+upload files in the yoursite directory:
+
+Edit:
+
+config/config.php
+
+you only need to edit this:
+
+Database credentials. Edit: username, password, name
+
+    define('DB_SERVER', 'localhost');
+
+    define('DB_USERNAME', 'root');
+
+    define('DB_PASSWORD', '');
+
+    define('DB_NAME', 'yoursite')
+
+
+then in your browser visit:
+
+db-install.php
+
+to install the users table.
