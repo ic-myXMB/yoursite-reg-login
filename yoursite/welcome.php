@@ -20,6 +20,9 @@ if(!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true){
 </style> 
 <body>
   <div class="wrapper"> 
+    <?php // add switch
+     include("inc/switch.php");
+    ?>    
     <div class="float-end">
       <?php 
         // Include top menu
@@ -28,7 +31,7 @@ if(!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true){
     </div> 
     <h2><i class="fa-solid fa-user-check"></i> User</h2>
     <p>Member Introduction </p>    
-    <div class="card">
+    <div class="card bg-light">
         <h5 class="card-header"><i class="fa-solid fa-bullhorn"></i> Welcome, <b><?php echo htmlspecialchars($_SESSION["username"]); ?></b>.</h5>
         <div class="card-body">
             <div class="text-center">            

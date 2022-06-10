@@ -106,27 +106,29 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
 </style>
 <body>
   <div class="wrapper">
+    <?php // add switch
+     include("inc/switch.php");
+    ?>    
     <h2><i class="fa-solid fa-file-pen"></i> Registration Form</h2>
     <p>Users can fill out this form to register an account.</p>
-    <form action="
-            <?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>" method="post">
-      <div class="card">
+    <form action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>" method="post">
+      <div class="card bg-light">
         <h5 class="card-header"><i class="fa-solid fa-user-plus"></i> Sign Up</h5>
         <div class="card-body">
           <p class="card-text">Please fill in this form to create an account.</p>
-          <div class="form-floating mb-3">
+          <div class="form-floating mb-3 text-secondary">
             <input id="floatingUsername" placeholder="Username" type="username" name="username" class="form-control 
             <?php echo (!empty($username_err)) ? 'is-invalid' : ''; ?>" value="<?php echo $username; ?>">
             <label for="floatingUsername">Username</label>
             <span class="invalid-feedback"> <?php echo $username_err; ?> </span>
           </div>
-          <div class="form-floating mb-3">
+          <div class="form-floating mb-3 text-secondary">
             <input id="floatingPassword" placeholder="Password" type="password" name="password" class="form-control 
             <?php echo (!empty($password_err)) ? 'is-invalid' : ''; ?>" value="<?php echo $password; ?>">
             <label for="floatingPassword">Password</label>
             <span class="invalid-feedback"> <?php echo $password_err; ?> </span>
           </div>
-          <div class="form-floating mb-3">
+          <div class="form-floating mb-3 text-secondary">
             <input id="floatingConfirmPassword" placeholder="Confirm Password" type="password" name="confirm_password" class="form-control 
             <?php echo (!empty($confirm_password_err)) ? 'is-invalid' : ''; ?>" value="<?php echo $confirm_password; ?>">
             <label for="floatingConfirmPassword">Confirm Password</label>

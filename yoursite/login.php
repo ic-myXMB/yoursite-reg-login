@@ -98,6 +98,9 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
 </style>
 <body>
     <div class="wrapper">
+        <?php // add switch
+        include("inc/switch.php");
+        ?>
         <h2><i class="fa-solid fa-file-pen"></i> User Login Form</h2>
         <p>Users can fill in their credentials to login here.</p>
         <?php 
@@ -105,18 +108,18 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
             echo '<div class="alert alert-danger">' . $login_err . '</div>';
         }        
         ?>
-        <div class="card">
+        <div class="card bg-light">
           <h5 class="card-header"><i class="fa-solid fa-key"></i> Login</h5>
           <div class="card-body">
             <p class="card-text">Please fill in your credentials to login.</p>
             <form action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>" method="post">
-              <div class="form-floating mb-3">
+              <div class="form-floating mb-3 text-secondary">
                 <input id="floatingUsername" placeholder="Username" type="username" name="username" class="form-control 
                     <?php echo (!empty($username_err)) ? 'is-invalid' : ''; ?>" value="<?php echo $username; ?>" />
                 <label for="floatingUsername">Username</label>
                 <span class="invalid-feedback"> <?php echo $username_err; ?> </span>
               </div>
-              <div class="form-floating mb-3">
+              <div class="form-floating mb-3 text-secondary">
                 <input id="floatingPassword" placeholder="Password" type="password" name="password" class="form-control 
                         <?php echo (!empty($password_err)) ? 'is-invalid' : ''; ?>">
                 <label for="floatingPassword">Password</label>

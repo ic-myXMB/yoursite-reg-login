@@ -81,6 +81,9 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
 </style>
 <body>
   <div class="wrapper">
+    <?php // add switch
+      include("inc/switch.php");
+    ?>    
     <div class="float-end">
       <?php 
         // Include top menu
@@ -90,17 +93,17 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
     <h2><i class="fa-solid fa-file-pen"></i> Password Reset Form</h2>
     <p>Users can fill out this form to reset their passwords.</p>
     <form action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>" method="post">
-      <div class="card">
+      <div class="card bg-light">
         <h5 class="card-header"><i class='fa-solid fa-redo-alt'></i> Reset Password</h5>
         <div class="card-body">
           <p class="card-text">Please fill out this form to reset your password.</p>
-          <div class="form-floating mb-3">
+          <div class="form-floating mb-3 text-secondary">
             <input id="floatingNewPassword" placeholder="New Password" type="password" name="new_password" class="form-control 
             <?php echo (!empty($new_password_err)) ? 'is-invalid' : ''; ?>" value="<?php echo $new_password; ?>">
             <label for="floatingNewPassword">New Password</label>
             <span class="invalid-feedback"> <?php echo $new_password_err; ?> </span>
           </div>
-          <div class="form-floating mb-3">
+          <div class="form-floating mb-3 text-secondary">
             <input id="floatingConfirmNewPassword" placeholder="Confirm New Password" type="password" name="confirm_password" class="form-control 
                                 <?php echo (!empty($confirm_password_err)) ? 'is-invalid' : ''; ?>">
             <label for="floatingConfirmNewPassword">Confirm Password</label>
