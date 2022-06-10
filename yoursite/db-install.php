@@ -129,9 +129,12 @@ function install_dbs(){
 </style>
 <body>
     <div class="wrapper">
+        <?php // add switch
+        include("inc/switch.php");
+        ?>      
         <h2><i class="fa-solid fa-database"></i> Installation</h2>
         <p>Details about the database install process.</p> 
-        <div class="card">
+        <div class="card bg-light">
           <h5 class="card-header"><i class="fa-solid fa-screwdriver-wrench"></i> Database</h5>
           <div class="card-body">
             <p class="card-text">Information...</p> 
