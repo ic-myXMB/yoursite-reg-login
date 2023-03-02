@@ -6,11 +6,11 @@ Notice: This project is submitted and shared "AS IS" in the hopes that folks may
 
 This project uses:
 
-* Bootstrap 5.2 beta
+* Bootstrap 5.3.0 alpha1
 
 * Light Switch 0.1.4
 
-* Font Awesome 6.1.1
+* Font Awesome 6.3.0
 
 Note: this does not include an index file or anything other than the login, registration, reset password forms and welcome page and included bootstrap 5.2 beta 1 and font awesome 6.1.1 files...
 
