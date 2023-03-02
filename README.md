@@ -1,6 +1,6 @@
 # yoursite-reg-login
 
-YourSite: Basic PHP / MySQL Bootstrap 5 User Login, User Registration, User Welcome & User Reset Password forms with light dark mode swith 
+YourSite: Basic PHP / MySQL Bootstrap 5 User Login, User Registration, User Welcome & User Reset Password forms with light dark mode switch 
 
 Notice: This project is submitted and shared "AS IS" in the hopes that folks may find it of some use and hopefully see it as a starting point to continue on with further and improve upon.
 
