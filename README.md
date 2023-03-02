@@ -12,7 +12,7 @@ This project uses:
 
 * Font Awesome 6.3.0
 
-Note: this does not include an index file or anything other than the login, registration, reset password forms and welcome page and included bootstrap 5.2 beta 1 and font awesome 6.1.1 files...
+Note: this does not include an index file or anything other than the login, registration, reset password forms and welcome page and included bootstrap 5.3.0 alpha 1 and font awesome 6.3.0 files...
 
 note: I did not opt to add a control panel or owner account and user management dashboard in this basic example as this is meant only to be a basic functional starting point for anyone wanting such to then edit / expand upon further. That is all. Best of luck!
 
